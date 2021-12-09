@@ -1,0 +1,86 @@
+.project-tile {
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(136,103,207,1) 20%, rgba(130,102,208,1) 43%, rgba(124,101,209,1) 56%, rgba(89,100,211,1) 73%, rgba(76,164,163,1) 98%) 1;
+    padding: 1.25rem;
+    justify-content: space-between;
+    transition: transform .75s;
+
+    .project-desc {
+        p {
+            margin-top: .25rem;
+        }
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .25rem;
+        
+        a {
+            text-decoration: none;
+            color: var(--cyan);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+
+
+.links-container {
+    svg {
+        width: 1.5rem;
+        fill: var(--text-color);
+    } 
+
+    margin-top: 1rem;    
+    list-style-type: none;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    
+    .social__link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        span {
+            opacity: 75%;
+        }
+
+        a {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin-left: -.25rem;
+            text-decoration: none;
+            color: var(--cyan);
+
+            &::before {
+                position: absolute;
+                content: attr(data-content); /* Prints the value of the attribute */
+                top: 0;
+                left: 0;
+                color: var(--violet);
+                overflow: hidden;
+                transition: width 275ms ease;
+                width: 0;
+                white-space: nowrap;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}
