@@ -603,7 +603,6 @@ body main #projects .project-tile {
 .links-container .social__link a::before {
   position: absolute;
   content: attr(data-content);
-  /* Prints the value of the attribute */
   top: 0;
   left: 0;
   color: var(--violet);
@@ -614,6 +613,19 @@ body main #projects .project-tile {
 }
 .links-container .social__link a:hover::before {
   width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-tile {
+    flex-direction: column;
+    padding: 1.25rem;
+    justify-content: space-between;
+  }
+  .project-tile .project-links {
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
