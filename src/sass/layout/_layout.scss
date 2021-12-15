@@ -96,6 +96,19 @@ body {
             justify-content: center;
             border-bottom: none;
 
+            div {
+                background-image: url(/src/assets/photos/profile-static.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 450px;
+                width: 450px;
+                transition: background-image .8s;
+
+                &:hover {
+                    background-image: url(/src/assets/photos/profile-hover.png);
+                }
+            }
+
             a {
                 color: var(--violet);
                 text-decoration: none;
