@@ -483,8 +483,8 @@ body main #welcome-section div {
   background-image: url(/src/assets/photos/profile-static.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 450px;
-  width: 450px;
+  height: 300px;
+  width: 300px;
   transition: background-image 0.8s;
 }
 body main #welcome-section div:hover {
@@ -552,6 +552,10 @@ body main #projects .project-tile {
   }
   body main {
     padding: 0 17.5rem;
+  }
+  body main #welcome-section div {
+    height: 450px;
+    width: 450px;
   }
 }
 .project-tile {
