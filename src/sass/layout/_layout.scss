@@ -102,11 +102,6 @@ body {
                 background-repeat: no-repeat;
                 height: 300px;
                 width: 300px;
-                transition: background-image .8s;
-
-                &:hover {
-                    background-image: url(/src/assets/photos/profile-hover.png);
-                }
             }
 
             a {
@@ -192,6 +187,11 @@ body {
                 div {
                     height: 450px;
                     width: 450px;
+                    transition: background-image .8s;
+
+                     &:hover {
+                    background-image: url(/src/assets/photos/profile-hover.png);
+                }
                 }
             }
         }   
