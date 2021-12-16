@@ -398,6 +398,27 @@ section h2 + p {
   font-size: 1.05rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  section h2 + p {
+    font-size: 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+  #welcome-section p {
+    font-size: 1rem;
+    line-height: 1.15rem;
+  }
+
+  #projects p {
+    font-size: 1rem;
+  }
+
+  .social__link span, .social__link a {
+    font-size: 1rem;
+  }
+}
 body {
   background-color: var(--dark-theme);
   color: var(--text-color);
@@ -459,7 +480,6 @@ body header #navbar .nav__menu li a:hover {
   color: var(--cyan);
 }
 body main {
-  margin-top: 75px;
   padding: 0 1rem;
 }
 body main section {
@@ -473,7 +493,6 @@ body main section h2 + p {
   margin-top: 0.25rem;
 }
 body main #welcome-section {
-  margin-top: -75px;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -486,6 +505,7 @@ body main #welcome-section div {
   background-repeat: no-repeat;
   height: 300px;
   width: 300px;
+  margin-bottom: 1rem;
 }
 body main #welcome-section a {
   color: var(--violet);
@@ -555,9 +575,15 @@ body main #projects .project-tile {
     height: 450px;
     width: 450px;
     transition: background-image 0.5s;
+    margin-bottom: 0rem;
   }
   body main #welcome-section div:hover {
     background-image: url(/src/assets/photos/profile-hover.png);
+  }
+}
+@media only screen and (max-width: 300px) {
+  main #welcome-section div {
+    width: 200px;
   }
 }
 .project-tile {
