@@ -21,7 +21,7 @@ body {
                 }
 
                 &:checked ~ ul.nav__menu {
-                    margin: 1rem 2rem 1rem 1rem;
+                    margin: 1rem 2rem .5rem 1rem;
                 }
 
                 &:checked ~ label.nav__toggle .close {
@@ -59,11 +59,10 @@ body {
                 li {
                     display: none;
                     list-style-type: none;
+                    margin-bottom: .5rem;
                     a{
                         text-decoration: none;
-                        color: white;
-                        margin-bottom: .5rem;
-
+                        color: var(--text-color);
                         &:hover {
                             color: var(--cyan);
                         }
@@ -171,6 +170,7 @@ body {
                     margin-right: -.5rem;
                     li {
                         display: block;
+                        margin-bottom: 0rem;
 
                         a {
                             margin-bottom: 0rem;
@@ -188,7 +188,7 @@ body {
                 div {
                     height: 450px;
                     width: 450px;
-                    transition: background-image .8s;
+                    transition: background-image .5s;
 
                     &:hover {
                         background-image: url(/src/assets/photos/profile-hover.png);
