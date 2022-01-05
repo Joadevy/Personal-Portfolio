@@ -35,7 +35,7 @@ I'll keep working on it!
 
 ## Author
 
-- Twitter - [@jjoadev](https://twitter.com/jjoadev)
+- Twitter - [@joaquinArlettaz](https://twitter.com/joaquinarlettaz)
 - Frontend Mentor - [@Joadevy](https://www.frontendmentor.io/profile/Joadevy)
 - FreeCodeCamp - [@jjoadev](https://www.freecodecamp.org/jjoadev)
 
