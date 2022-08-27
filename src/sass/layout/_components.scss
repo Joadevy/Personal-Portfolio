@@ -5,7 +5,9 @@
     border-image: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(136,103,207,1) 20%, rgba(130,102,208,1) 43%, rgba(124,101,209,1) 56%, rgba(89,100,211,1) 73%, rgba(76,164,163,1) 98%) 1;
     padding: 1.25rem;
     align-items: center;
-    transition: transform .75s;
+    transition: transform .5s;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
 
     .project-icon{
         display: flex;
@@ -44,7 +46,9 @@
     }
 
     &:hover {
-        transform: scale(1.01);
+        transform: translate3d(1%, 1%, 0) scale(1, 1); 
+        backface-visibility: hidden;
+        -webkit-font-smoothing: subpixel-antialiased;
     }
 }
 
@@ -113,7 +117,7 @@
             flex-direction: row;
             justify-content: space-between;
         }
-        
+
         .project-icon{
             display: none;
         }

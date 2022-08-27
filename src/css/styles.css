@@ -562,7 +562,10 @@ body main #projects .project-tile {
      border-image: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(136, 103, 207) 20%, rgb(130, 102, 208) 43%, rgb(124, 101, 209) 56%, rgb(89, 100, 211) 73%, rgb(76, 164, 163) 98%) 1;
   padding: 1.25rem;
   align-items: center;
-  transition: transform 0.75s;
+  transition: transform 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .project-tile .project-icon {
   display: flex;
@@ -593,7 +596,10 @@ body main #projects .project-tile {
   text-decoration: underline;
 }
 .project-tile:hover {
-  transform: scale(1.01);
+  transform: translate3d(1%, 1%, 0) scale(1, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .links-container {
