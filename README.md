@@ -1,7 +1,7 @@
 **Welcome everybody to my personal portfolio webpage 👋**
 
 ## Live site 🚀
-- Live Site URL: https://www.joaquinarlettaz.com.ar/
+- Live Site URL: https://www.joaquinarlettaz.tech/
 
 ## Table of contents
   - [Live Site](#live-site)
