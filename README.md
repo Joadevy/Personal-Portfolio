@@ -1,4 +1,4 @@
-**Welcome everybody to my personal portfolio webpage 👋**
+**Welcome everybody to my OLD VERSION of my personal portfolio webpage, [here is the link to my new one](https://github.com/Joadevy/Personal-portfolio-next)  👋**
 
 ## Live site 🚀
 - Live Site URL: https://www.joaquinarlettaz.tech/
@@ -8,7 +8,7 @@
   - [Overview](#overview)
   - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-I-learned)
+  - [What I learned](#what-i-learned)
   - [Author](#author)
 
 ## Overview
